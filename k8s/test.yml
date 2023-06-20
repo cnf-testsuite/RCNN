@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: srsran
+spec:
+  containers:
+  - name: srsran
+    image: conformance/srsran:latest
+    command: ["/bin/sleep"]
+    args: ["1000000"]
+    volumeMounts:
+      - mountPath: /dev/bus/usb
+        name: usb
+    securityContext:
+      privileged: true
+  volumes:
+  - name: usb
+    hostPath:
+      path: /dev/bus/usb/ 
