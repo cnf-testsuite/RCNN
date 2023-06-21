@@ -26,5 +26,5 @@ RUN cd /srsran \
 && cmake .. \ 
 && make 
 
-COPY srsran/gnb_band71.conf /srsran/build/apps/gnb/
+COPY ./gnb_band71.conf /srsran/build/apps/gnb/
 
