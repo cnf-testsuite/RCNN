@@ -1,4 +1,6 @@
-# RCNN Install
+# RCNN- Reproducible Cloud Native 5G Node 
+![Alt Text](https://i.imgur.com/Hx2wFR2.png)
+## RCNN Install
 `git clone git@github.com:cnf-testsuite/RCNN.git`
 `cd k8s`
 
