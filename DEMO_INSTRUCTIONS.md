@@ -1,3 +1,4 @@
+![Alt Text](https://i.imgur.com/Hx2wFR2.png)
 ## Demo Instructions
 
 1. Go into Zoom from presentation box (can be the backhaul)
