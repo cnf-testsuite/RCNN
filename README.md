@@ -1,5 +1,5 @@
 # RCNN - Reproducible Cloud Native 5G Node 
-![Alt Text](https://i.imgur.com/g3wwDBl.png)
+![Alt Text](https://i.imgur.com/Hx2wFR2.png)
 ## SRS Install - Non Containerized - For a Containerized K8s Version goto k8s dir of this repo. 
 
 ### Install UHD Driver
