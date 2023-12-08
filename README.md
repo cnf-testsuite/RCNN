@@ -1,4 +1,6 @@
-# SRS Install - Non Containerized - For a Containerized K8s Version goto k8s dir of this repo. 
+# RCNN - Reproducible Cloud Native 5G Node 
+![Alt Text](https://i.imgur.com/g3wwDBl.png)
+## SRS Install - Non Containerized - For a Containerized K8s Version goto k8s dir of this repo. 
 
 ### Install UHD Driver
 `sudo apt install -y libboost-all-dev libusb-1.0-0-dev doxygen python3-docutils python3-mako python3-numpy python3-requests python3-ruamel.yaml python3-setuptools git cmake build-essential`
