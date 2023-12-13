@@ -1,6 +1,6 @@
 FROM debian:latest
 
-RUN apt update && apt install -y libboost-all-dev libusb-1.0-0-dev doxygen python3-docutils python3-mako python3-numpy python3-requests python3-ruamel.yaml python3-setuptools git cmake build-essential
+RUN apt update && apt install -y libboost-all-dev libusb-1.0-0-dev doxygen python3-docutils python3-mako python3-numpy python3-requests python3-ruamel.yaml python3-setuptools git cmake build-essential gettext
 
 RUN git clone https://github.com/EttusResearch/uhd.git /uhd
 
@@ -16,7 +16,7 @@ RUN cd /uhd \
 && ldconfig \
 && uhd_images_downloader
 
-RUN apt install -y cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev git
+RUN apt install -y cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev git dnsutils
 
 RUN git clone --depth 1 --branch release_23_5 https://github.com/srsran/srsRAN_Project.git /srsran
 
@@ -26,5 +26,6 @@ RUN cd /srsran \
 && cmake .. \ 
 && make 
 
-COPY ./gnb_band71.conf /srsran/build/apps/gnb/
+COPY ./gnb.yml.template /gnb.yml.template
+COPY ./entrypoint.sh /entrypoint.sh 
 

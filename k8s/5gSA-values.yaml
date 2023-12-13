@@ -8,19 +8,19 @@ amf:
     guamiList:
       - plmn_id:
           mcc: "001"
-          mnc: "02"
+          mnc: "01"
         amf_id:
           region: 2
           set: 1
     taiList:
       - plmn_id:
           mcc: "001"
-          mnc: "02"
+          mnc: "01"
         tac: [7]
     plmnList:
       - plmn_id:
           mcc: "001"
-          mnc: "02"
+          mnc: "01"
         s_nssai:
           - sst: 1
 
@@ -31,4 +31,4 @@ webui:
 populate:
   enabled: true
   initCommands:
-  - open5gs-dbctl add_ue_with_apn 001010000000001 fec86ba6eb707ed08905757b1bb44b8f C42449363BBAD02B66D16BC975D77CC1 internet
+  - open5gs-dbctl add_ue_with_apn 001010000000009 fec86ba6eb707ed08905757b1bb44b8f C42449363BBAD02B66D16BC975D77CC1 internet

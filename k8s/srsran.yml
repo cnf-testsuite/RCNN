@@ -6,8 +6,16 @@ spec:
   containers:
   - name: srsran
     image: conformance/srsran:latest
-    command: ["/bin/sleep"]
-    args: ["1000000"]
+    imagePullPolicy: Always
+    command: ["/bin/bash"]
+    args: ["-c","/entrypoint.sh"]
+    env:
+    - name: AMF_SERVICE
+      value: open5gs-amf-ngap
+    - name: LOCAL_IP
+      valueFrom:
+        fieldRef:
+          fieldPath: status.podIP
     volumeMounts:
       - mountPath: /dev/bus/usb
         name: usb
