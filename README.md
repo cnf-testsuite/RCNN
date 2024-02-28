@@ -1,5 +1,5 @@
 # RCNN- Reproducible Cloud Native 5G Node 
-![Alt Text](https://i.imgur.com/Hx2wFR2.png)
+![Alt Text](https://i.imgur.com/lXQG9MY.png)
 
 ## Why does this exist?
 We needed a real RAN to test for the [CNF Test Suite](https://github.com/cnf-testsuite). We couldn’t find an example that ‘just works’ in Kubernetes so we made one.
