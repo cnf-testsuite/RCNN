@@ -16,9 +16,9 @@ All of this is installable in Kubernetes, with helm charts, making it (somewhat)
 `kind create cluster --config=./k8s/kind.conf`
 
 ### Install Open5GS
-`helm repo add openverso https://gradiant.github.io/openverso-charts/`
+`helm pull oci://registry-1.docker.io/gradiant/open5gs --version 2.2.0`
 
-`helm install open5gs openverso/open5gs --version 2.0.8 --values ./k8s/5gSA-values.yaml`
+`helm install open5gs oci://registry-1.docker.io/gradiant/open5gs --version 2.2.0 --values ./k8s/5gSA-values.yam`
 
 ### Install SRS Ran
 `kubectl create -f srsran.yml`
