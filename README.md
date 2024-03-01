@@ -18,7 +18,7 @@ All of this is installable in Kubernetes, with helm charts, making it (somewhat)
 ### Install Open5GS
 `helm pull oci://registry-1.docker.io/gradiant/open5gs --version 2.0.8`
 
-`helm install open5gs oci://registry-1.docker.io/gradiant/open5gs --version 2.0.8 --values ./k8s/5gSA-values.yam`
+`helm install open5gs oci://registry-1.docker.io/gradiant/open5gs --version 2.0.8 --values ./k8s/5gSA-values.yaml`
 
 ### Install SRS Ran
 `kubectl create -f srsran.yml`
