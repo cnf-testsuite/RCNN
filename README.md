@@ -10,7 +10,7 @@ This is Radio Access Networking software (RAN) combined with 5g core software, w
 All of this is installable in Kubernetes, with helm charts, making it (somewhat) cloud native.
 
 ## RCNN Installation steps
-`git clone git@github.com:cnf-testsuite/RCNN.git`
+`git clone https://github.com/cnf-testsuite/RCNN.git`
 
 ### Create KIND Cluster with USB Access to B200/Mini
 `kind create cluster --config=./k8s/kind.conf`
